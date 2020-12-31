@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GameCatalog</title>
+    <title>Lesson1</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   </head>
 
   <body>
-    <%= yield %>
+    <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h4>
+        <span class="p-2 text-dark"><%= link_to "GC", root_path %></span>
+      </h4>
+      <span class="p-2 text-dark"><%= link_to "All products", products_path, :class => 'btn btn-warning' %></span>
+      <nav class="my-2 my-md-0 me-md-3">
+        <div class="row-3">
+
+      <!-- <a class="btn btn-outline-primary" href="#">Sign up</a> -->
+    </header>
+    <div style="padding: 20px">
+      <%= yield %>
+    </div>
   </body>
 </html>

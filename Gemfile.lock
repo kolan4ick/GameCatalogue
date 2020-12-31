@@ -74,10 +74,16 @@ GEM
     arbre (1.4.0)
       activesupport (>= 3.0.0, < 6.2)
       ruby2_keywords (>= 0.0.2, < 1.0)
+    autoprefixer-rails (10.1.0.0)
+      execjs
     bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.5.1)
       msgpack (~> 1.0)
+    bootstrap (4.5.3)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 1.14.3, < 2)
+      sassc-rails (>= 2.0.0)
     builder (3.2.4)
     byebug (11.1.3)
     capybara (3.34.0)
@@ -98,6 +104,7 @@ GEM
       responders
       warden (~> 1.2.3)
     erubi (1.10.0)
+    execjs (2.7.0)
     ffi (1.14.2)
     formtastic (3.1.5)
       actionpack (>= 3.2.13)
@@ -152,6 +159,7 @@ GEM
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    popper_js (1.16.0)
     public_suffix (4.0.6)
     puma (5.1.1)
       nio4r (~> 2.0)
@@ -216,6 +224,9 @@ GEM
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     semantic_range (2.3.1)
+    simple_form (5.0.3)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -262,6 +273,7 @@ DEPENDENCIES
   activeadmin
   activestorage
   bootsnap (>= 1.4.4)
+  bootstrap
   byebug
   capybara (>= 3.26)
   devise
@@ -272,6 +284,7 @@ DEPENDENCIES
   rails (~> 6.1.0)
   sass-rails (>= 6)
   selenium-webdriver
+  simple_form
   spring
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
