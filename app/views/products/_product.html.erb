@@ -1,8 +1,10 @@
 <div class="col-6">
-  <h2>
-    <b>
-      <%=link_to product.title, product_path(product)%>
-    </b>
-  </h2>
-  <%= image_tag product.photo, width:300, height:300 %>
+      <%= link_to product_path(product) do %>
+      <h2>
+      <b>
+        <%= product.title %>
+      </b>
+    </h2>
+      <%= image_tag product.photo, width:300, height:300 %>
+      <% end %>
 </div>

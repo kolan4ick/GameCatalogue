@@ -7,21 +7,20 @@ class ProductsController < ApplicationController
     product
   end
 
-  def new
-    @product = Product.new
-  end
-
-  def create
-    product = Product.new(products_params)
-    if product.save
-      redirect_to product
-    else
-      pp 'error' + product
-    end
-  end
+  # def new
+  #   @product = Product.new
+  # end
+  #
+  # def create
+  #   product = Product.new(products_params)
+  #   if product.save
+  #     redirect_to product
+  #   else
+  #     pp 'error' + product
+  #   end
+  # end
 
   private
-
   def product
     @product ||= Product.find(params[:id])
   end
