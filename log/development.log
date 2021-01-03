@@ -7514,3 +7514,1873 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 324)
 
 
+Started GET "/" for 127.0.0.1 at 2021-01-03 23:23:29 +0200
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 232)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2420)
+Completed 200 OK in 44ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 5228)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-03 23:23:34 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 1900)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 2315)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-03 23:24:02 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2202)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 3553)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-01-03 23:24:06 +0200
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [2 times] (Duration: 239.8ms | Allocations: 35631)
+  Rendered products/index.html.erb within layouts/application (Duration: 280.3ms | Allocations: 41829)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 285.7ms | Allocations: 43594)
+Completed 200 OK in 295ms (Views: 284.0ms | ActiveRecord: 8.2ms | Allocations: 44856)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3560734a8f992e7c1370fb614d3468535a010466/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:24:07 +0200
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:24:07 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3560734a8f992e7c1370fb614d3468535a010466", "filename"=>"Games_Subnav_Minecraft-228x350"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a", "filename"=>"Snow Runner"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: 61139x8evang23ou39o67creq0fy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMToyOTowNy4xOThaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb1d1353fcf62f6f640dca3347dc1a4ed6f723c/Games_Subnav_Minecraft-228x350.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMToyOTowNy4xOThaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb1d1353fcf62f6f640dca3347dc1a4ed6f723c/Games_Subnav_Minecraft-228x350.png
+Completed 302 Found in 31ms (ActiveRecord: 0.2ms | Allocations: 4259)
+
+
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: fbebz3dxtjlw7gn8yfokqrm701f8 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6Mjk6MDcuMjA3WiIsInB1ciI6ImJsb2Jfa2V5In19--d7de6ece670dc526cab2951e87c2a4877680017d/Snow%20Runner.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6Mjk6MDcuMjA3WiIsInB1ciI6ImJsb2Jfa2V5In19--d7de6ece670dc526cab2951e87c2a4877680017d/Snow%20Runner.jpeg
+Completed 302 Found in 38ms (ActiveRecord: 1.6ms | Allocations: 4247)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMToyOTowNy4xOThaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb1d1353fcf62f6f640dca3347dc1a4ed6f723c/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:24:07 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6Mjk6MDcuMjA3WiIsInB1ciI6ImJsb2Jfa2V5In19--d7de6ece670dc526cab2951e87c2a4877680017d/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:24:07 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 367)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Snow Runner"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2021-01-03 23:24:11 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:25:in `product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:6
+  Rendered products/show.html.erb within layouts/application (Duration: 18.8ms | Allocations: 2304)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 4170)
+Completed 200 OK in 50ms (Views: 30.5ms | ActiveRecord: 1.2ms | Allocations: 5418)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMToyOTowNy4xOThaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb1d1353fcf62f6f640dca3347dc1a4ed6f723c/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:24:11 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-03 23:24:30 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 1909)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 2323)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-01-03 23:24:32 +0200
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [2 times] (Duration: 76.8ms | Allocations: 4438)
+  Rendered products/index.html.erb within layouts/application (Duration: 92.9ms | Allocations: 5383)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 108.3ms | Allocations: 7245)
+Completed 200 OK in 112ms (Views: 106.5ms | ActiveRecord: 3.3ms | Allocations: 7680)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMToyOTowNy4xOThaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb1d1353fcf62f6f640dca3347dc1a4ed6f723c/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:24:32 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6Mjk6MDcuMjA3WiIsInB1ciI6ImJsb2Jfa2V5In19--d7de6ece670dc526cab2951e87c2a4877680017d/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:24:32 +0200
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Snow Runner"}
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/products/admin" for 127.0.0.1 at 2021-01-03 23:24:39 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"admin"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:25:in `product'
+Completed 404 Not Found in 12ms (ActiveRecord: 0.5ms | Allocations: 1151)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=admin):
+  
+app/controllers/products_controller.rb:25:in `product'
+app/controllers/products_controller.rb:7:in `show'
+Started GET "/admin" for 127.0.0.1 at 2021-01-03 23:24:46 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (1.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb (Duration: 180.6ms | Allocations: 40805)
+Completed 200 OK in 213ms (Views: 184.2ms | ActiveRecord: 2.7ms | Allocations: 48566)
+
+
+Started GET "/admin/products" for 127.0.0.1 at 2021-01-03 23:24:48 +0200
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments"[0m
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs"[0m
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (Duration: 206.4ms | Allocations: 57880)
+Completed 200 OK in 221ms (Views: 208.8ms | ActiveRecord: 2.3ms | Allocations: 61032)
+
+
+Started GET "/admin/products/5" for 127.0.0.1 at 2021-01-03 23:24:50 +0200
+Processing by Admin::ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/admin/products.rb:25:in `block (4 levels) in <main>'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/admin/products.rb:25:in `block (4 levels) in <main>'
+[36m  Disk Storage (5.4ms) [0m[34mGenerated URL for file at key: fbebz3dxtjlw7gn8yfokqrm701f8 ()[0m
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb (Duration: 84.9ms | Allocations: 23524)
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 1.2ms | Allocations: 26810)
+
+
+  
+ActionView::Template::Error (bad URI(is not URI?): nil):
+    1: insert_tag renderer_for(:show)
+  
+app/admin/products.rb:25:in `block (4 levels) in <main>'
+app/admin/products.rb:24:in `block (3 levels) in <main>'
+app/admin/products.rb:18:in `block (2 levels) in <main>'
+Started GET "/admin/products/5" for 127.0.0.1 at 2021-01-03 23:25:17 +0200
+Processing by Admin::ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/admin/products.rb:25:in `block (4 levels) in <main>'
+[36m  Disk Storage (1.9ms) [0m[34mGenerated URL for file at key: fbebz3dxtjlw7gn8yfokqrm701f8 ()[0m
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb (Duration: 98.7ms | Allocations: 38846)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 7.4ms | Allocations: 52648)
+
+
+  
+ActionView::Template::Error (bad URI(is not URI?): nil):
+    1: insert_tag renderer_for(:show)
+  
+app/admin/products.rb:25:in `block (4 levels) in <main>'
+app/admin/products.rb:24:in `block (3 levels) in <main>'
+app/admin/products.rb:18:in `block (2 levels) in <main>'
+Started GET "/admin/products/5" for 127.0.0.1 at 2021-01-03 23:25:38 +0200
+Processing by Admin::ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/admin/products.rb:25:in `block (4 levels) in <main>'
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb (Duration: 94.1ms | Allocations: 38696)
+Completed 200 OK in 143ms (Views: 92.9ms | ActiveRecord: 7.7ms | Allocations: 52474)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:25:38 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a", "filename"=>"Snow Runner"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (1.2ms) [0m[34mGenerated URL for file at key: fbebz3dxtjlw7gn8yfokqrm701f8 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6MzA6MzguNjk4WiIsInB1ciI6ImJsb2Jfa2V5In19--ffa3d61cf0ead81872b82286e2ca4dda4cdb4a2b/Snow%20Runner.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6MzA6MzguNjk4WiIsInB1ciI6ImJsb2Jfa2V5In19--ffa3d61cf0ead81872b82286e2ca4dda4cdb4a2b/Snow%20Runner.jpeg
+Completed 302 Found in 18ms (ActiveRecord: 0.4ms | Allocations: 1803)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6MzA6MzguNjk4WiIsInB1ciI6ImJsb2Jfa2V5In19--ffa3d61cf0ead81872b82286e2ca4dda4cdb4a2b/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:25:38 +0200
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Snow Runner"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 369)
+
+
+Started GET "/admin/products/5" for 127.0.0.1 at 2021-01-03 23:26:19 +0200
+Processing by Admin::ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/admin/products.rb:24:in `block (3 levels) in <main>'
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb (Duration: 105.3ms | Allocations: 38528)
+Completed 200 OK in 152ms (Views: 102.8ms | ActiveRecord: 8.9ms | Allocations: 52303)
+
+
+Started GET "/admin/products/5" for 127.0.0.1 at 2021-01-03 23:26:34 +0200
+Processing by Admin::ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/admin/products.rb:25:in `block (4 levels) in <main>'
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb (Duration: 126.5ms | Allocations: 38684)
+Completed 200 OK in 194ms (Views: 126.0ms | ActiveRecord: 9.8ms | Allocations: 52459)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:26:35 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a", "filename"=>"Snow Runner"}
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (1.3ms) [0m[34mGenerated URL for file at key: fbebz3dxtjlw7gn8yfokqrm701f8 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6MzE6MzUuNzI2WiIsInB1ciI6ImJsb2Jfa2V5In19--1894948fdb1ab388dc2514ded782ebbcdffc5266/Snow%20Runner.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6MzE6MzUuNzI2WiIsInB1ciI6ImJsb2Jfa2V5In19--1894948fdb1ab388dc2514ded782ebbcdffc5266/Snow%20Runner.jpeg
+Completed 302 Found in 20ms (ActiveRecord: 1.0ms | Allocations: 1781)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6MzE6MzUuNzI2WiIsInB1ciI6ImJsb2Jfa2V5In19--1894948fdb1ab388dc2514ded782ebbcdffc5266/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:26:35 +0200
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Snow Runner"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started GET "/admin/products" for 127.0.0.1 at 2021-01-03 23:28:32 +0200
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments"[0m
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs"[0m
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (Duration: 183.0ms | Allocations: 53328)
+Completed 200 OK in 197ms (Views: 181.9ms | ActiveRecord: 2.5ms | Allocations: 55300)
+
+
+Started GET "/admin/products/new" for 127.0.0.1 at 2021-01-03 23:28:34 +0200
+Processing by Admin::ProductsController#new as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/new.html.arb
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/new.html.arb (Duration: 94.3ms | Allocations: 31644)
+Completed 200 OK in 110ms (Views: 103.0ms | ActiveRecord: 0.2ms | Allocations: 34186)
+
+
+Started GET "/admin/products/new" for 127.0.0.1 at 2021-01-03 23:32:10 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::ProductsController#new as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/new.html.arb
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/new.html.arb (Duration: 244.6ms | Allocations: 57181)
+Completed 200 OK in 344ms (Views: 258.3ms | ActiveRecord: 3.7ms | Allocations: 71898)
+
+
+Started POST "/admin/products" for 127.0.0.1 at 2021-01-03 23:34:50 +0200
+Processing by Admin::ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "product"=>{"title"=>"Call of Duty: Modern Warfare", "body"=>"Call of Duty: Modern Warfare is a video game, a first-person shooter developed by Infinity Ward and released by Activision. This is the sixteenth main game in the Call of Duty series, as well as the \"soft restart\" of the Modern Warfare subseries. The release took place on October 25, 2019 for Microsoft Windows, PlayStation 4 and Xbox One.", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000561f809c2d18 @tempfile=#<Tempfile:/tmp/RackMultipart20210103-37569-xmrcdt.webp>, @original_filename="CallOfDuty.webp", @content_type="image/webp", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"CallOfDuty.webp\"\r\nContent-Type: image/webp\r\n">, "genre"=>"Shooter", "developer"=>"Infinity Ward, Sledgehammer Games", "age_limit"=>"18"}, "commit"=>"Create Product"}
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :image[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (8.5ms)[0m  [1m[32mINSERT INTO "products" ("title", "body", "genre", "developer", "age_limit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Call of Duty: Modern Warfare"], ["body", "Call of Duty: Modern Warfare is a video game, a first-person shooter developed by Infinity Ward and released by Activision. This is the sixteenth main game in the Call of Duty series, as well as the \"soft restart\" of the Modern Warfare subseries. The release took place on October 25, 2019 for Microsoft Windows, PlayStation 4 and Xbox One."], ["genre", "Shooter"], ["developer", "Infinity Ward, Sledgehammer Games"], ["age_limit", 18], ["created_at", "2021-01-03 21:34:50.953062"], ["updated_at", "2021-01-03 21:34:50.953062"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/products/6
+Completed 302 Found in 120ms (ActiveRecord: 13.5ms | Allocations: 11072)
+
+
+Started GET "/admin/products/6" for 127.0.0.1 at 2021-01-03 23:34:51 +0200
+Processing by Admin::ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb (Duration: 129.8ms | Allocations: 22957)
+Completed 200 OK in 150ms (Views: 132.1ms | ActiveRecord: 3.5ms | Allocations: 26380)
+
+
+Started GET "/admin/products/6" for 127.0.0.1 at 2021-01-03 23:35:16 +0200
+Processing by Admin::ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb (Duration: 69.1ms | Allocations: 24772)
+Completed 200 OK in 120ms (Views: 69.9ms | ActiveRecord: 5.6ms | Allocations: 38595)
+
+
+Started GET "/admin/products/new" for 127.0.0.1 at 2021-01-03 23:35:19 +0200
+Processing by Admin::ProductsController#new as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/new.html.arb
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/new.html.arb (Duration: 62.4ms | Allocations: 28818)
+Completed 200 OK in 71ms (Views: 63.0ms | ActiveRecord: 0.8ms | Allocations: 30531)
+
+
+Started POST "/admin/products" for 127.0.0.1 at 2021-01-03 23:35:51 +0200
+Processing by Admin::ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "product"=>{"title"=>"Call of Duty: Modern Warfare", "body"=>"Call of Duty: Modern Warfare is a video game, a first-person shooter developed by Infinity Ward and released by Activision. This is the sixteenth main game in the Call of Duty series, as well as the \"soft restart\" of the Modern Warfare subseries. The release took place on October 25, 2019 for Microsoft Windows, PlayStation 4 and Xbox One.", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000561f7e7a2468 @tempfile=#<Tempfile:/tmp/RackMultipart20210103-37569-101z0qx.webp>, @original_filename="CallOfDuty.webp", @content_type="image/webp", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"CallOfDuty.webp\"\r\nContent-Type: image/webp\r\n">, "genre"=>"Shooter", "developer"=>"Infinity Ward, Sledgehammer Games", "age_limit"=>"18"}, "commit"=>"Create Product"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (2.3ms)[0m  [1m[32mINSERT INTO "products" ("title", "body", "genre", "developer", "age_limit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Call of Duty: Modern Warfare"], ["body", "Call of Duty: Modern Warfare is a video game, a first-person shooter developed by Infinity Ward and released by Activision. This is the sixteenth main game in the Call of Duty series, as well as the \"soft restart\" of the Modern Warfare subseries. The release took place on October 25, 2019 for Microsoft Windows, PlayStation 4 and Xbox One."], ["genre", "Shooter"], ["developer", "Infinity Ward, Sledgehammer Games"], ["age_limit", 18], ["created_at", "2021-01-03 21:35:51.515220"], ["updated_at", "2021-01-03 21:35:51.515220"]]
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (5.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["key", "hzz3ivh4utryjqznvwx1sibn62lh"], ["filename", "CallOfDuty.webp"], ["content_type", "image/webp"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 929618], ["checksum", "yH1eirdhhM+Ywkk17GFdPQ=="], ["created_at", "2021-01-03 21:35:51.622272"]]
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 7], ["blob_id", 3], ["created_at", "2021-01-03 21:35:51.645849"]]
+  [1m[36mProduct Update (0.4ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = ? WHERE "products"."id" = ?[0m  [["updated_at", "2021-01-03 21:35:51.655316"], ["id", 7]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[36mcommit transaction[0m
+[36m  Disk Storage (44.9ms) [0m[32mUploaded file to key: hzz3ivh4utryjqznvwx1sibn62lh (checksum: yH1eirdhhM+Ywkk17GFdPQ==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: f6bc9e72-c3ed-4efc-a614-115d43a20a7a) to Async(default) with arguments: #<GlobalID:0x0000561f80dbe660 @uri=#<URI::GID gid://game-catalog/ActiveStorage::Blob/3>>
+Redirected to http://localhost:3000/admin/products/7
+Completed 302 Found in 375ms (ActiveRecord: 22.1ms | Allocations: 51835)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveStorage::Blob Load (1.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f6bc9e72-c3ed-4efc-a614-115d43a20a7a] Performing ActiveStorage::AnalyzeJob (Job ID: f6bc9e72-c3ed-4efc-a614-115d43a20a7a) from Async(default) enqueued at 2021-01-03T21:35:51Z with arguments: #<GlobalID:0x0000561f80e43ce8 @uri=#<URI::GID gid://game-catalog/ActiveStorage::Blob/3>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f6bc9e72-c3ed-4efc-a614-115d43a20a7a] [36m  Disk Storage (7.2ms) [0m[34mDownloaded file from key: hzz3ivh4utryjqznvwx1sibn62lh[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f6bc9e72-c3ed-4efc-a614-115d43a20a7a] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f6bc9e72-c3ed-4efc-a614-115d43a20a7a]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/admin/products/7" for 127.0.0.1 at 2021-01-03 23:35:51 +0200
+Processing by Admin::ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f6bc9e72-c3ed-4efc-a614-115d43a20a7a]   [1m[36mActiveStorage::Blob Update (0.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 3]]
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f6bc9e72-c3ed-4efc-a614-115d43a20a7a]   [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f6bc9e72-c3ed-4efc-a614-115d43a20a7a] Performed ActiveStorage::AnalyzeJob (Job ID: f6bc9e72-c3ed-4efc-a614-115d43a20a7a) from Async(default) in 85.58ms
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/admin/products.rb:27:in `block (4 levels) in <main>'
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb (Duration: 69.2ms | Allocations: 23501)
+Completed 200 OK in 129ms (Views: 70.7ms | ActiveRecord: 1.3ms | Allocations: 29382)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:35:52 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as */*
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a", "filename"=>"CallOfDuty"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (1.3ms) [0m[34mGenerated URL for file at key: hzz3ivh4utryjqznvwx1sibn62lh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDA6NTIuMTY2WiIsInB1ciI6ImJsb2Jfa2V5In19--84f1e17274556852b82e523f099cdf5d2259fa4f/CallOfDuty.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDA6NTIuMTY2WiIsInB1ciI6ImJsb2Jfa2V5In19--84f1e17274556852b82e523f099cdf5d2259fa4f/CallOfDuty.webp
+Completed 302 Found in 12ms (ActiveRecord: 0.5ms | Allocations: 1781)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDA6NTIuMTY2WiIsInB1ciI6ImJsb2Jfa2V5In19--84f1e17274556852b82e523f099cdf5d2259fa4f/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:35:52 +0200
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms | Allocations: 367)
+
+
+Started GET "/admin/products/7" for 127.0.0.1 at 2021-01-03 23:36:20 +0200
+Processing by Admin::ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAdminUser Load (1.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/admin/products.rb:27:in `block (4 levels) in <main>'
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb (Duration: 106.1ms | Allocations: 38721)
+Completed 200 OK in 189ms (Views: 105.0ms | ActiveRecord: 8.4ms | Allocations: 52515)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:36:21 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as */*
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a", "filename"=>"CallOfDuty"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (1.4ms) [0m[34mGenerated URL for file at key: hzz3ivh4utryjqznvwx1sibn62lh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDE6MjEuMjMxWiIsInB1ciI6ImJsb2Jfa2V5In19--94b6a95f69114c25460816052f5b4c8cfc3d4f16/CallOfDuty.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDE6MjEuMjMxWiIsInB1ciI6ImJsb2Jfa2V5In19--94b6a95f69114c25460816052f5b4c8cfc3d4f16/CallOfDuty.webp
+Completed 302 Found in 16ms (ActiveRecord: 0.6ms | Allocations: 1771)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDE6MjEuMjMxWiIsInB1ciI6ImJsb2Jfa2V5In19--94b6a95f69114c25460816052f5b4c8cfc3d4f16/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:36:21 +0200
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-03 23:36:30 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2199)
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 3559)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-01-03 23:36:32 +0200
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [4 times] (Duration: 58.5ms | Allocations: 7948)
+  Rendered products/index.html.erb within layouts/application (Duration: 70.1ms | Allocations: 9416)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 79.3ms | Allocations: 11280)
+Completed 200 OK in 84ms (Views: 79.8ms | ActiveRecord: 2.5ms | Allocations: 12498)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3560734a8f992e7c1370fb614d3468535a010466/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:36:32 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3560734a8f992e7c1370fb614d3468535a010466", "filename"=>"Games_Subnav_Minecraft-228x350"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:36:32 +0200
+[36m  Disk Storage (1.3ms) [0m[34mGenerated URL for file at key: 61139x8evang23ou39o67creq0fy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMTo0MTozMi45MTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--204015807da68358f75e8e06fd7948e25e3b429b/Games_Subnav_Minecraft-228x350.png)[0m
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMTo0MTozMi45MTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--204015807da68358f75e8e06fd7948e25e3b429b/Games_Subnav_Minecraft-228x350.png
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a", "filename"=>"Snow Runner"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Completed 302 Found in 50ms (ActiveRecord: 0.3ms | Allocations: 3511)
+
+
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: fbebz3dxtjlw7gn8yfokqrm701f8 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDE6MzIuOTc1WiIsInB1ciI6ImJsb2Jfa2V5In19--c893587c563a05a2331751c32e00e678797b68c3/Snow%20Runner.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDE6MzIuOTc1WiIsInB1ciI6ImJsb2Jfa2V5In19--c893587c563a05a2331751c32e00e678797b68c3/Snow%20Runner.jpeg
+Completed 302 Found in 34ms (ActiveRecord: 1.5ms | Allocations: 2987)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMTo0MTozMi45MTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--204015807da68358f75e8e06fd7948e25e3b429b/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:36:33 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDE6MzIuOTc1WiIsInB1ciI6ImJsb2Jfa2V5In19--c893587c563a05a2331751c32e00e678797b68c3/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:36:33 +0200
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Snow Runner"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDE6MjEuMjMxWiIsInB1ciI6ImJsb2Jfa2V5In19--94b6a95f69114c25460816052f5b4c8cfc3d4f16/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:36:33 +0200
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2021-01-03 23:36:35 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:25:in `product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:6
+  Rendered products/show.html.erb within layouts/application (Duration: 25.7ms | Allocations: 2298)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 4165)
+Completed 200 OK in 41ms (Views: 31.5ms | ActiveRecord: 1.2ms | Allocations: 5305)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDE6MjEuMjMxWiIsInB1ciI6ImJsb2Jfa2V5In19--94b6a95f69114c25460816052f5b4c8cfc3d4f16/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:36:35 +0200
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-01-03 23:38:58 +0200
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [4 times] (Duration: 148.2ms | Allocations: 39033)
+  Rendered products/index.html.erb within layouts/application (Duration: 184.8ms | Allocations: 45373)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 195.8ms | Allocations: 47432)
+Completed 200 OK in 231ms (Views: 194.9ms | ActiveRecord: 7.1ms | Allocations: 50604)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3560734a8f992e7c1370fb614d3468535a010466/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:38:58 +0200
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:38:58 +0200
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:38:58 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3560734a8f992e7c1370fb614d3468535a010466", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Processing by ActiveStorage::Blobs::RedirectController#show as */*
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a", "filename"=>"CallOfDuty"}
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a", "filename"=>"Snow Runner"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveStorage::Blob Load (3.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (3.0ms) [0m[34mGenerated URL for file at key: 61139x8evang23ou39o67creq0fy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMTo0Mzo1OC44ODZaIiwicHVyIjoiYmxvYl9rZXkifX0=--1724d6ed32490ab8edad1afb2734e0a91875c1e6/Games_Subnav_Minecraft-228x350.png)[0m
+[36m  Disk Storage (1.4ms) [0m[34mGenerated URL for file at key: hzz3ivh4utryjqznvwx1sibn62lh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTE2WiIsInB1ciI6ImJsb2Jfa2V5In19--26ed5d3b9ee007c72976610ba7697c60a04fc86c/CallOfDuty.webp)[0m
+[36m  Disk Storage (1.9ms) [0m[34mGenerated URL for file at key: fbebz3dxtjlw7gn8yfokqrm701f8 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTQxWiIsInB1ciI6ImJsb2Jfa2V5In19--61f0c794d19cbd710596284d1931c37cb352efbe/Snow%20Runner.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMTo0Mzo1OC44ODZaIiwicHVyIjoiYmxvYl9rZXkifX0=--1724d6ed32490ab8edad1afb2734e0a91875c1e6/Games_Subnav_Minecraft-228x350.png
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTE2WiIsInB1ciI6ImJsb2Jfa2V5In19--26ed5d3b9ee007c72976610ba7697c60a04fc86c/CallOfDuty.webp
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTQxWiIsInB1ciI6ImJsb2Jfa2V5In19--61f0c794d19cbd710596284d1931c37cb352efbe/Snow%20Runner.jpeg
+Completed 302 Found in 105ms (ActiveRecord: 0.4ms | Allocations: 7285)
+
+
+Completed 302 Found in 93ms (ActiveRecord: 5.4ms | Allocations: 6246)
+
+
+Completed 302 Found in 78ms (ActiveRecord: 4.4ms | Allocations: 5899)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMTo0Mzo1OC44ODZaIiwicHVyIjoiYmxvYl9rZXkifX0=--1724d6ed32490ab8edad1afb2734e0a91875c1e6/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:38:59 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTQxWiIsInB1ciI6ImJsb2Jfa2V5In19--61f0c794d19cbd710596284d1931c37cb352efbe/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:38:59 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTE2WiIsInB1ciI6ImJsb2Jfa2V5In19--26ed5d3b9ee007c72976610ba7697c60a04fc86c/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:38:59 +0200
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 444)
+
+
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Snow Runner"}
+Processing by ActiveStorage::DiskController#show as */*
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 327)
+
+
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2021-01-03 23:39:01 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:25:in `product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:6
+  Rendered products/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2303)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 4169)
+Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 1.4ms | Allocations: 5402)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTE2WiIsInB1ciI6ImJsb2Jfa2V5In19--26ed5d3b9ee007c72976610ba7697c60a04fc86c/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:39:01 +0200
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-01-03 23:40:22 +0200
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [4 times] (Duration: 50.7ms | Allocations: 7769)
+  Rendered products/index.html.erb within layouts/application (Duration: 57.4ms | Allocations: 8667)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.5ms | Allocations: 10529)
+Completed 200 OK in 70ms (Views: 63.8ms | ActiveRecord: 4.2ms | Allocations: 10963)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMTo0Mzo1OC44ODZaIiwicHVyIjoiYmxvYl9rZXkifX0=--1724d6ed32490ab8edad1afb2734e0a91875c1e6/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:40:23 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 8ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTQxWiIsInB1ciI6ImJsb2Jfa2V5In19--61f0c794d19cbd710596284d1931c37cb352efbe/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:40:23 +0200
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Snow Runner"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTE2WiIsInB1ciI6ImJsb2Jfa2V5In19--26ed5d3b9ee007c72976610ba7697c60a04fc86c/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:40:23 +0200
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-03 23:40:23 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 1955)
+Completed 200 OK in 48ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 3133)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-03 23:40:55 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 1899)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 2313)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-03 23:41:12 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1900)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 2313)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-01-03 23:41:13 +0200
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [4 times] (Duration: 68.9ms | Allocations: 7777)
+  Rendered products/index.html.erb within layouts/application (Duration: 74.0ms | Allocations: 8646)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 79.7ms | Allocations: 10512)
+Completed 200 OK in 82ms (Views: 78.0ms | ActiveRecord: 2.8ms | Allocations: 10938)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMTo0Mzo1OC44ODZaIiwicHVyIjoiYmxvYl9rZXkifX0=--1724d6ed32490ab8edad1afb2734e0a91875c1e6/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:41:13 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTE2WiIsInB1ciI6ImJsb2Jfa2V5In19--26ed5d3b9ee007c72976610ba7697c60a04fc86c/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:41:13 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTQxWiIsInB1ciI6ImJsb2Jfa2V5In19--61f0c794d19cbd710596284d1931c37cb352efbe/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:41:13 +0200
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Snow Runner"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Processing by ActiveStorage::DiskController#show as */*
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2021-01-03 23:41:16 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:25:in `product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  Rendered products/show.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1070)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2940)
+Completed 200 OK in 20ms (Views: 14.7ms | ActiveRecord: 0.7ms | Allocations: 3930)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-01-03 23:41:21 +0200
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (1.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [4 times] (Duration: 60.4ms | Allocations: 7766)
+  Rendered products/index.html.erb within layouts/application (Duration: 64.7ms | Allocations: 8635)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.1ms | Allocations: 10496)
+Completed 200 OK in 71ms (Views: 65.4ms | ActiveRecord: 4.7ms | Allocations: 10921)
+
+
+Started GET "/admin" for 127.0.0.1 at 2021-01-03 23:41:27 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb (Duration: 136.4ms | Allocations: 40282)
+Completed 200 OK in 184ms (Views: 140.5ms | ActiveRecord: 1.6ms | Allocations: 50219)
+
+
+Started GET "/admin/products" for 127.0.0.1 at 2021-01-03 23:41:29 +0200
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments"[0m
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs"[0m
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (Duration: 252.9ms | Allocations: 61946)
+Completed 200 OK in 268ms (Views: 252.9ms | ActiveRecord: 3.4ms | Allocations: 65092)
+
+
+Started DELETE "/admin/products/6" for 127.0.0.1 at 2021-01-03 23:41:41 +0200
+Processing by Admin::ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mProduct Destroy (9.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (19.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/products
+Completed 302 Found in 108ms (ActiveRecord: 29.5ms | Allocations: 12593)
+
+
+Started GET "/admin/products" for 127.0.0.1 at 2021-01-03 23:41:41 +0200
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments"[0m
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs"[0m
+  Rendered /home/kolan4ick/.rvm/gems/ruby-2.6.6/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (Duration: 147.0ms | Allocations: 53443)
+Completed 200 OK in 159ms (Views: 146.1ms | ActiveRecord: 2.3ms | Allocations: 55298)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-03 23:41:45 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 1908)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 2322)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-01-03 23:41:46 +0200
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [3 times] (Duration: 76.9ms | Allocations: 6649)
+  Rendered products/index.html.erb within layouts/application (Duration: 91.9ms | Allocations: 7503)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 105.5ms | Allocations: 9369)
+Completed 200 OK in 109ms (Views: 104.8ms | ActiveRecord: 2.3ms | Allocations: 9795)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMTo0Mzo1OC44ODZaIiwicHVyIjoiYmxvYl9rZXkifX0=--1724d6ed32490ab8edad1afb2734e0a91875c1e6/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:41:47 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTQxWiIsInB1ciI6ImJsb2Jfa2V5In19--61f0c794d19cbd710596284d1931c37cb352efbe/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-03 23:41:47 +0200
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Snow Runner"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjE6NDM6NTguOTE2WiIsInB1ciI6ImJsb2Jfa2V5In19--26ed5d3b9ee007c72976610ba7697c60a04fc86c/CallOfDuty.webp" for 127.0.0.1 at 2021-01-03 23:41:47 +0200
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/search" for 127.0.0.1 at 2021-01-03 23:50:47 +0200
+  
+SyntaxError (/home/kolan4ick/github/GameCatalogue/config/routes.rb:6: syntax error, unexpected ':', expecting end
+  get: :search, to:"products#search"
+     ^):
+  
+config/routes.rb:6: syntax error, unexpected ':', expecting end
+config/routes.rb:6: syntax error, unexpected ':', expecting end
+config/routes.rb:6: syntax error, unexpected ':', expecting end
+Started GET "/search" for 127.0.0.1 at 2021-01-03 23:51:10 +0200
+Processing by ProductsController#search as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered products/search.html.erb within layouts/application (Duration: 35.8ms | Allocations: 8406)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 8486)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.9ms | Allocations: 10087)
+
+
+  
+ActionView::Template::Error (undefined method `count' for #<ActiveRecord::QueryMethods::WhereChain:0x00007fcfd859e2f0>):
+    1: <h1>Searching Results of "<%= @search %>"</h1>
+    2: <h5>Count of results - <%= @products.count %></h5>
+    3: <%= render @products %>
+  
+app/views/products/search.html.erb:2
+Started GET "/search" for 127.0.0.1 at 2021-01-03 23:53:02 +0200
+  
+SyntaxError (/home/kolan4ick/github/GameCatalogue/app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+...@products = Product.where{name: params[:search]}
+...                              ^
+/home/kolan4ick/github/GameCatalogue/app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+...ct.where{name: params[:search]}
+...                              ^
+/home/kolan4ick/github/GameCatalogue/app/controllers/products_controller.rb:34: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+app/controllers/products_controller.rb:34: syntax error, unexpected end-of-input, expecting end
+app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+app/controllers/products_controller.rb:34: syntax error, unexpected end-of-input, expecting end
+app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+app/controllers/products_controller.rb:34: syntax error, unexpected end-of-input, expecting end
+Started GET "/search" for 127.0.0.1 at 2021-01-03 23:53:22 +0200
+  
+SyntaxError (/home/kolan4ick/github/GameCatalogue/app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+...products = Product.where{title: params[:search]}
+...                              ^
+/home/kolan4ick/github/GameCatalogue/app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+...t.where{title: params[:search]}
+...                              ^
+/home/kolan4ick/github/GameCatalogue/app/controllers/products_controller.rb:34: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+app/controllers/products_controller.rb:34: syntax error, unexpected end-of-input, expecting end
+app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+app/controllers/products_controller.rb:34: syntax error, unexpected end-of-input, expecting end
+app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+app/controllers/products_controller.rb:34: syntax error, unexpected end-of-input, expecting end
+Started GET "/search" for 127.0.0.1 at 2021-01-03 23:53:43 +0200
+  
+SyntaxError (/home/kolan4ick/github/GameCatalogue/app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+...products = Product.where{title: params[:search]}
+...                              ^
+/home/kolan4ick/github/GameCatalogue/app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+...t.where{title: params[:search]}
+...                              ^
+/home/kolan4ick/github/GameCatalogue/app/controllers/products_controller.rb:35: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+app/controllers/products_controller.rb:35: syntax error, unexpected end-of-input, expecting end
+app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+app/controllers/products_controller.rb:35: syntax error, unexpected end-of-input, expecting end
+app/controllers/products_controller.rb:24: syntax error, unexpected ':', expecting '}'
+app/controllers/products_controller.rb:24: syntax error, unexpected '}', expecting end
+app/controllers/products_controller.rb:35: syntax error, unexpected end-of-input, expecting end
+Started GET "/search" for 127.0.0.1 at 2021-01-03 23:54:35 +0200
+Processing by ProductsController#search as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/products_controller.rb:24:in `search'
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" IS NULL[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" IS NULL[0m
+  ↳ app/views/products/search.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 11)
+  Rendered products/search.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1622)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 3773)
+Completed 200 OK in 31ms (Views: 19.8ms | ActiveRecord: 3.0ms | Allocations: 6770)
+
+
+Started GET "/search=123" for 127.0.0.1 at 2021-01-03 23:54:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/search=123"):
+  
+Started GET "/search='123'" for 127.0.0.1 at 2021-01-03 23:54:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/search='123'"):
+  
+Started GET "/search=%22123%22" for 127.0.0.1 at 2021-01-03 23:54:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/search=%22123%22"):
+  
+Started GET "/search" for 127.0.0.1 at 2021-01-03 23:54:53 +0200
+Processing by ProductsController#search as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" IS NULL[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" IS NULL[0m
+  ↳ app/views/products/search.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered products/search.html.erb within layouts/application (Duration: 14.0ms | Allocations: 1455)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 3326)
+Completed 200 OK in 35ms (Views: 30.3ms | ActiveRecord: 0.5ms | Allocations: 3795)
+
+
+Started GET "/search?search=%22123%22" for 127.0.0.1 at 2021-01-03 23:55:18 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"\"123\""}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" = ?[0m  [["title", "\"123\""]]
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" = ?[0m  [["title", "\"123\""]]
+  ↳ app/views/products/search.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered products/search.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1507)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 3378)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 1.2ms | Allocations: 3842)
+
+
+Started GET "/search?search=%22123%22" for 127.0.0.1 at 2021-01-03 23:58:16 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"\"123\""}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" = ?[0m  [["title", "\"123\""]]
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" = ?[0m  [["title", "\"123\""]]
+  ↳ app/views/products/search.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered products/search.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1608)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3845)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.8ms | Allocations: 5340)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-03 23:58:23 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2012)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3195)
+
+
+Started GET "/search?search=123" for 127.0.0.1 at 2021-01-03 23:58:25 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"123"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" = ?[0m  [["title", "123"]]
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" = ?[0m  [["title", "123"]]
+  ↳ app/views/products/search.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered products/search.html.erb within layouts/application (Duration: 18.7ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 3430)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 1.0ms | Allocations: 3895)
+
+
+Started GET "/search?search=sssssss" for 127.0.0.1 at 2021-01-03 23:58:28 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"sssssss"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" = ?[0m  [["title", "sssssss"]]
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" = ?[0m  [["title", "sssssss"]]
+  ↳ app/views/products/search.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered products/search.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 3420)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.6ms | Allocations: 3884)
+
+
+Started GET "/search?search=" for 127.0.0.1 at 2021-01-03 23:58:31 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" = ?[0m  [["title", ""]]
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" = ?[0m  [["title", ""]]
+  ↳ app/views/products/search.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  Rendered products/search.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3420)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.7ms | Allocations: 3884)
+
+
+Started GET "/search?search=Call" for 127.0.0.1 at 2021-01-03 23:58:57 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Call"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" = ?[0m  [["title", "Call"]]
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" = ?[0m  [["title", "Call"]]
+  ↳ app/views/products/search.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  Rendered products/search.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3420)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 0.5ms | Allocations: 3884)
+
+
+Started GET "/search?search=Mine" for 127.0.0.1 at 2021-01-03 23:59:00 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Mine"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" = ?[0m  [["title", "Mine"]]
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" = ?[0m  [["title", "Mine"]]
+  ↳ app/views/products/search.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered products/search.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 3420)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 1.0ms | Allocations: 3884)
+
+
+Started GET "/search?search=Minecraft" for 127.0.0.1 at 2021-01-03 23:59:03 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Minecraft"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" = ?[0m  [["title", "Minecraft"]]
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" = ?[0m  [["title", "Minecraft"]]
+  ↳ app/views/products/search.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [1 times] (Duration: 72.1ms | Allocations: 20086)
+  Rendered products/search.html.erb within layouts/application (Duration: 94.1ms | Allocations: 25620)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 99.5ms | Allocations: 27453)
+Completed 200 OK in 104ms (Views: 95.7ms | ActiveRecord: 5.4ms | Allocations: 27917)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3560734a8f992e7c1370fb614d3468535a010466/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:59:03 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3560734a8f992e7c1370fb614d3468535a010466", "filename"=>"Games_Subnav_Minecraft-228x350"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (1.3ms) [0m[34mGenerated URL for file at key: 61139x8evang23ou39o67creq0fy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNDowMy43MzZaIiwicHVyIjoiYmxvYl9rZXkifX0=--8d694a0b204e8f66c25ba03aae1267d9b7a8ef2a/Games_Subnav_Minecraft-228x350.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNDowMy43MzZaIiwicHVyIjoiYmxvYl9rZXkifX0=--8d694a0b204e8f66c25ba03aae1267d9b7a8ef2a/Games_Subnav_Minecraft-228x350.png
+Completed 302 Found in 24ms (ActiveRecord: 0.3ms | Allocations: 1791)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNDowMy43MzZaIiwicHVyIjoiYmxvYl9rZXkifX0=--8d694a0b204e8f66c25ba03aae1267d9b7a8ef2a/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:59:03 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 367)
+
+
+Started GET "/search?search=Minecraf" for 127.0.0.1 at 2021-01-03 23:59:06 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Minecraf"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" = ?[0m  [["title", "Minecraf"]]
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" = ?[0m  [["title", "Minecraf"]]
+  ↳ app/views/products/search.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  Rendered products/search.html.erb within layouts/application (Duration: 15.4ms | Allocations: 1483)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 3419)
+Completed 200 OK in 23ms (Views: 15.7ms | ActiveRecord: 5.4ms | Allocations: 3884)
+
+
+Started GET "/search?search=Minecraft" for 127.0.0.1 at 2021-01-03 23:59:07 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Minecraft"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" = ?[0m  [["title", "Minecraft"]]
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" = ?[0m  [["title", "Minecraft"]]
+  ↳ app/views/products/search.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [1 times] (Duration: 17.8ms | Allocations: 2227)
+  Rendered products/search.html.erb within layouts/application (Duration: 42.0ms | Allocations: 3754)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 83.5ms | Allocations: 5683)
+Completed 200 OK in 89ms (Views: 83.5ms | ActiveRecord: 1.2ms | Allocations: 6147)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNDowMy43MzZaIiwicHVyIjoiYmxvYl9rZXkifX0=--8d694a0b204e8f66c25ba03aae1267d9b7a8ef2a/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:59:07 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2021-01-03 23:59:08 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:29:in `product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:6
+  Rendered products/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2276)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 4208)
+Completed 200 OK in 23ms (Views: 17.5ms | ActiveRecord: 1.0ms | Allocations: 5441)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNDowMy43MzZaIiwicHVyIjoiYmxvYl9rZXkifX0=--8d694a0b204e8f66c25ba03aae1267d9b7a8ef2a/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-03 23:59:09 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/search?search=Minecraft" for 127.0.0.1 at 2021-01-03 23:59:10 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Minecraft"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE "products"."title" = ?[0m  [["title", "Minecraft"]]
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."title" = ?[0m  [["title", "Minecraft"]]
+  ↳ app/views/products/search.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [1 times] (Duration: 12.2ms | Allocations: 2228)
+  Rendered products/search.html.erb within layouts/application (Duration: 24.0ms | Allocations: 3755)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 5681)
+Completed 200 OK in 40ms (Views: 34.7ms | ActiveRecord: 1.5ms | Allocations: 6146)
+
+
+Started GET "/search?search=Minecraft" for 127.0.0.1 at 2021-01-04 00:00:07 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Minecraft"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (name LIKE '%Minecraft%')[0m
+  ↳ app/views/products/search.html.erb:2
+  Rendered products/search.html.erb within layouts/application (Duration: 11.9ms | Allocations: 3658)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 3740)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.5ms | Allocations: 4352)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: name):
+    1: <h1>Searching Results of "<%= @search %>"</h1>
+    2: <h5>Count of results - <%= @products.count %></h5>
+    3: <%= render @products %>
+  
+app/views/products/search.html.erb:2
+Started GET "/search?search=Minecraft" for 127.0.0.1 at 2021-01-04 00:00:14 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Minecraft"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title LIKE '%Minecraft%')[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (title LIKE '%Minecraft%')[0m
+  ↳ app/views/products/search.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [1 times] (Duration: 64.9ms | Allocations: 16968)
+  Rendered products/search.html.erb within layouts/application (Duration: 164.1ms | Allocations: 23787)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 170.0ms | Allocations: 25620)
+Completed 200 OK in 174ms (Views: 171.8ms | ActiveRecord: 14.3ms | Allocations: 26255)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3560734a8f992e7c1370fb614d3468535a010466/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-04 00:00:15 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3560734a8f992e7c1370fb614d3468535a010466", "filename"=>"Games_Subnav_Minecraft-228x350"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (1.4ms) [0m[34mGenerated URL for file at key: 61139x8evang23ou39o67creq0fy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png
+Completed 302 Found in 16ms (ActiveRecord: 0.4ms | Allocations: 1768)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-04 00:00:15 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started GET "/search?search=Minecraf" for 127.0.0.1 at 2021-01-04 00:00:17 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Minecraf"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title LIKE '%Minecraf%')[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (title LIKE '%Minecraf%')[0m
+  ↳ app/views/products/search.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [1 times] (Duration: 23.8ms | Allocations: 2227)
+  Rendered products/search.html.erb within layouts/application (Duration: 47.3ms | Allocations: 3750)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.1ms | Allocations: 5676)
+Completed 200 OK in 62ms (Views: 57.2ms | ActiveRecord: 2.8ms | Allocations: 6123)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-04 00:00:17 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/search?search=Min" for 127.0.0.1 at 2021-01-04 00:00:19 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Min"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title LIKE '%Min%')[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (title LIKE '%Min%')[0m
+  ↳ app/views/products/search.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [1 times] (Duration: 19.8ms | Allocations: 2227)
+  Rendered products/search.html.erb within layouts/application (Duration: 35.6ms | Allocations: 3751)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 5677)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 2.6ms | Allocations: 6124)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-04 00:00:19 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 16ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/search?search=craft" for 127.0.0.1 at 2021-01-04 00:00:22 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"craft"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title LIKE '%craft%')[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (title LIKE '%craft%')[0m
+  ↳ app/views/products/search.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [1 times] (Duration: 27.3ms | Allocations: 2227)
+  Rendered products/search.html.erb within layouts/application (Duration: 52.0ms | Allocations: 3751)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.3ms | Allocations: 5677)
+Completed 200 OK in 69ms (Views: 61.4ms | ActiveRecord: 1.3ms | Allocations: 6124)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-04 00:00:22 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2021-01-04 00:00:24 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:29:in `product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:6
+  Rendered products/show.html.erb within layouts/application (Duration: 15.8ms | Allocations: 2082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 4008)
+Completed 200 OK in 28ms (Views: 22.6ms | ActiveRecord: 0.8ms | Allocations: 5110)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-04 00:00:25 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-04 00:00:26 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 1981)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 2538)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-04 00:01:01 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 1961)
+Completed 200 OK in 9ms (Views: 7.8ms | Allocations: 2522)
+
+
+Started GET "/search?search=Call" for 127.0.0.1 at 2021-01-04 00:01:05 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Call"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/products_controller.rb:24:in `search'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.9ms | Allocations: 1348)
+
+
+  
+ArgumentError (malformed format string - %C):
+  
+app/controllers/products_controller.rb:24:in `search'
+Started GET "/search?search=Call" for 127.0.0.1 at 2021-01-04 00:01:14 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Call"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title LIKE '%Call%'body LIKE '%Call%')[0m
+  ↳ app/views/products/search.html.erb:2
+  Rendered products/search.html.erb within layouts/application (Duration: 13.7ms | Allocations: 3657)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 3739)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 3.2ms | Allocations: 4354)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "body": syntax error):
+    1: <h1>Searching Results of "<%= @search %>"</h1>
+    2: <h5>Count of results - <%= @products.count %></h5>
+    3: <%= render @products %>
+  
+app/views/products/search.html.erb:2
+Started GET "/search?search=Call" for 127.0.0.1 at 2021-01-04 00:01:27 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Call"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title, body LIKE '%Call%')[0m
+  ↳ app/views/products/search.html.erb:2
+  Rendered products/search.html.erb within layouts/application (Duration: 15.7ms | Allocations: 3659)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 3741)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.8ms | Allocations: 4353)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: row value misused):
+    1: <h1>Searching Results of "<%= @search %>"</h1>
+    2: <h5>Count of results - <%= @products.count %></h5>
+    3: <%= render @products %>
+  
+app/views/products/search.html.erb:2
+Started GET "/search?search=Call" for 127.0.0.1 at 2021-01-04 00:01:38 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Call"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title body LIKE '%Call%')[0m
+  ↳ app/views/products/search.html.erb:2
+  Rendered products/search.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3659)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3741)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.0ms | Allocations: 4353)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "body": syntax error):
+    1: <h1>Searching Results of "<%= @search %>"</h1>
+    2: <h5>Count of results - <%= @products.count %></h5>
+    3: <%= render @products %>
+  
+app/views/products/search.html.erb:2
+Started GET "/search?search=Call" for 127.0.0.1 at 2021-01-04 00:01:43 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Call"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title LIKE '%Call%')[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (title LIKE '%Call%')[0m
+  ↳ app/views/products/search.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [1 times] (Duration: 55.7ms | Allocations: 16922)
+  Rendered products/search.html.erb within layouts/application (Duration: 96.8ms | Allocations: 23738)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.3ms | Allocations: 25571)
+Completed 200 OK in 106ms (Views: 103.6ms | ActiveRecord: 9.2ms | Allocations: 26206)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a/CallOfDuty.webp" for 127.0.0.1 at 2021-01-04 00:01:43 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as */*
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a", "filename"=>"CallOfDuty"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (1.4ms) [0m[34mGenerated URL for file at key: hzz3ivh4utryjqznvwx1sibn62lh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MDY6NDMuNzUwWiIsInB1ciI6ImJsb2Jfa2V5In19--8fc7ce3494fc78ddcb49cae7e2a36fad30a1869d/CallOfDuty.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MDY6NDMuNzUwWiIsInB1ciI6ImJsb2Jfa2V5In19--8fc7ce3494fc78ddcb49cae7e2a36fad30a1869d/CallOfDuty.webp
+Completed 302 Found in 26ms (ActiveRecord: 0.3ms | Allocations: 1769)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MDY6NDMuNzUwWiIsInB1ciI6ImJsb2Jfa2V5In19--8fc7ce3494fc78ddcb49cae7e2a36fad30a1869d/CallOfDuty.webp" for 127.0.0.1 at 2021-01-04 00:01:43 +0200
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 19ms (ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2021-01-04 00:01:46 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:29:in `product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:6
+  Rendered products/show.html.erb within layouts/application (Duration: 13.1ms | Allocations: 2083)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 4009)
+Completed 200 OK in 24ms (Views: 17.9ms | ActiveRecord: 0.9ms | Allocations: 5110)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MDY6NDMuNzUwWiIsInB1ciI6ImJsb2Jfa2V5In19--8fc7ce3494fc78ddcb49cae7e2a36fad30a1869d/CallOfDuty.webp" for 127.0.0.1 at 2021-01-04 00:01:46 +0200
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2021-01-04 00:02:12 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/products_controller.rb:29:in `product'
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:29:in `product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:6
+  Rendered products/show.html.erb within layouts/application (Duration: 54.5ms | Allocations: 16431)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.8ms | Allocations: 18266)
+Completed 200 OK in 84ms (Views: 57.6ms | ActiveRecord: 7.0ms | Allocations: 24720)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a/CallOfDuty.webp" for 127.0.0.1 at 2021-01-04 00:02:12 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as */*
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a", "filename"=>"CallOfDuty"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (2.5ms) [0m[34mGenerated URL for file at key: hzz3ivh4utryjqznvwx1sibn62lh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MDc6MTIuNjY2WiIsInB1ciI6ImJsb2Jfa2V5In19--ffd88584ed3dbe69ed234d9beccfdf8a246ae1af/CallOfDuty.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MDc6MTIuNjY2WiIsInB1ciI6ImJsb2Jfa2V5In19--ffd88584ed3dbe69ed234d9beccfdf8a246ae1af/CallOfDuty.webp
+Completed 302 Found in 20ms (ActiveRecord: 0.3ms | Allocations: 1770)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MDc6MTIuNjY2WiIsInB1ciI6ImJsb2Jfa2V5In19--ffd88584ed3dbe69ed234d9beccfdf8a246ae1af/CallOfDuty.webp" for 127.0.0.1 at 2021-01-04 00:02:12 +0200
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started GET "/search?search=Call" for 127.0.0.1 at 2021-01-04 00:02:16 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Call"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title LIKE '%Call%'body LIKE '%Call%')[0m
+  ↳ app/views/products/search.html.erb:2
+  Rendered products/search.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2245)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2327)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.0ms | Allocations: 2752)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "body": syntax error):
+    1: <h1>Searching Results of "<%= @search %>"</h1>
+    2: <h5>Count of results - <%= @products.count %></h5>
+    3: <%= render @products %>
+  
+app/views/products/search.html.erb:2
+Started GET "/search?search=Call" for 127.0.0.1 at 2021-01-04 00:04:47 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Call"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title LIKE '%Call%' OR body LIKE '%Call%')[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (title LIKE '%Call%' OR body LIKE '%Call%')[0m
+  ↳ app/views/products/search.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [1 times] (Duration: 59.2ms | Allocations: 16914)
+  Rendered products/search.html.erb within layouts/application (Duration: 87.3ms | Allocations: 23732)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 100.3ms | Allocations: 25565)
+Completed 200 OK in 103ms (Views: 101.8ms | ActiveRecord: 6.0ms | Allocations: 26201)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a/CallOfDuty.webp" for 127.0.0.1 at 2021-01-04 00:04:48 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as */*
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a8f3956b88863c7a73935ece1aa4e4f2055d89a", "filename"=>"CallOfDuty"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: hzz3ivh4utryjqznvwx1sibn62lh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MDk6NDguMjIxWiIsInB1ciI6ImJsb2Jfa2V5In19--a3aaeaaa1bd13a41de4bf3d0e55b7be03a035f81/CallOfDuty.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MDk6NDguMjIxWiIsInB1ciI6ImJsb2Jfa2V5In19--a3aaeaaa1bd13a41de4bf3d0e55b7be03a035f81/CallOfDuty.webp
+Completed 302 Found in 12ms (ActiveRecord: 0.5ms | Allocations: 1763)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MDk6NDguMjIxWiIsInB1ciI6ImJsb2Jfa2V5In19--a3aaeaaa1bd13a41de4bf3d0e55b7be03a035f81/CallOfDuty.webp" for 127.0.0.1 at 2021-01-04 00:04:48 +0200
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started GET "/search?search=Mine" for 127.0.0.1 at 2021-01-04 00:04:51 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"Mine"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title LIKE '%Mine%' OR body LIKE '%Mine%')[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (title LIKE '%Mine%' OR body LIKE '%Mine%')[0m
+  ↳ app/views/products/search.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [1 times] (Duration: 19.6ms | Allocations: 2227)
+  Rendered products/search.html.erb within layouts/application (Duration: 42.0ms | Allocations: 3751)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 5677)
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 2.4ms | Allocations: 6125)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-04 00:04:51 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2021-01-04 00:04:52 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:29:in `product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:6
+  Rendered products/show.html.erb within layouts/application (Duration: 13.9ms | Allocations: 2082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 4008)
+Completed 200 OK in 26ms (Views: 18.8ms | ActiveRecord: 0.8ms | Allocations: 5110)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-04 00:04:52 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/search?search=pixel" for 127.0.0.1 at 2021-01-04 00:04:56 +0200
+Processing by ProductsController#search as HTML
+  Parameters: {"search"=>"pixel"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/search.html.erb within layouts/application
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" WHERE (title LIKE '%pixel%' OR body LIKE '%pixel%')[0m
+  ↳ app/views/products/search.html.erb:2
+  [1m[36mProduct Load (2.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (title LIKE '%pixel%' OR body LIKE '%pixel%')[0m
+  ↳ app/views/products/search.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (1.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [1 times] (Duration: 21.3ms | Allocations: 2227)
+  Rendered products/search.html.erb within layouts/application (Duration: 45.3ms | Allocations: 3752)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 5678)
+Completed 200 OK in 62ms (Views: 53.6ms | ActiveRecord: 6.8ms | Allocations: 6126)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-04 00:04:56 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2021-01-04 00:04:57 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:29:in `product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:6
+  Rendered products/show.html.erb within layouts/application (Duration: 49.4ms | Allocations: 2078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 4004)
+Completed 200 OK in 61ms (Views: 57.1ms | ActiveRecord: 0.9ms | Allocations: 4994)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-04 00:04:58 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-04 00:05:01 +0200
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1981)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 2538)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-01-04 00:05:04 +0200
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/product.rb:4:in `photo'
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/_product.html.erb:8
+  Rendered collection of products/_product.html.erb [3 times] (Duration: 62.3ms | Allocations: 6648)
+  Rendered products/index.html.erb within layouts/application (Duration: 72.0ms | Allocations: 7623)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.8ms | Allocations: 9560)
+Completed 200 OK in 84ms (Views: 79.0ms | ActiveRecord: 3.0ms | Allocations: 10109)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-04 00:05:04 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ceea16cd82fa248436237e9a6bed2f8d57cf25a", "filename"=>"Snow Runner"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: fbebz3dxtjlw7gn8yfokqrm701f8 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MTA6MDQuNzg5WiIsInB1ciI6ImJsb2Jfa2V5In19--3b57403feb06a5242fff8699824167c6ab89436b/Snow%20Runner.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MTA6MDQuNzg5WiIsInB1ciI6ImJsb2Jfa2V5In19--3b57403feb06a5242fff8699824167c6ab89436b/Snow%20Runner.jpeg
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms | Allocations: 1531)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabUpsWW5velpIaDBhbXgzTjJkdU9IbG1iMnR4Y20wM01ERm1PQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOdWIzY2dVblZ1Ym1WeUxtcHdaV2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjFOdWIzY2xNakJTZFc1dVpYSXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MTA6MDQuNzg5WiIsInB1ciI6ImJsb2Jfa2V5In19--3b57403feb06a5242fff8699824167c6ab89436b/Snow%20Runner.jpeg" for 127.0.0.1 at 2021-01-04 00:05:04 +0200
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Snow Runner"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOakV4TXpsNE9HVjJZVzVuTWpOdmRUTTVielkzWTNKbGNUQm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpYjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjBkaGJXVnpYMU4xWW01aGRsOU5hVzVsWTNKaFpuUXRNakk0ZURNMU1DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMS0wMS0wM1QyMjowNToxNS4yMjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--77d6201f6a3b037429e6c1627312ef203bf4ccd2/Games_Subnav_Minecraft-228x350.png" for 127.0.0.1 at 2021-01-04 00:05:04 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhSHA2TTJsMmFEUjFkSEo1YW5GNmJuWjNlREZ6YVdKdU5qSnNhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkRZV3hzVDJaRWRYUjVMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowTmhiR3hQWmtSMWRIa3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjEtMDEtMDNUMjI6MDk6NDguMjIxWiIsInB1ciI6ImJsb2Jfa2V5In19--a3aaeaaa1bd13a41de4bf3d0e55b7be03a035f81/CallOfDuty.webp" for 127.0.0.1 at 2021-01-04 00:05:04 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+Processing by ActiveStorage::DiskController#show as */*
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"CallOfDuty"}
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Games_Subnav_Minecraft-228x350"}
+Completed 200 OK in 14ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Completed 200 OK in 10ms (ActiveRecord: 0.0ms | Allocations: 1039)
+
+

@@ -19,6 +19,10 @@ class ProductsController < ApplicationController
   #     pp 'error' + product
   #   end
   # end
+  def search
+    @search = params[:search]
+    @products = Product.where("title LIKE '%#{params[:search]}%' OR body LIKE '%#{params[:search]}%'" )
+  end
 
   private
   def product
