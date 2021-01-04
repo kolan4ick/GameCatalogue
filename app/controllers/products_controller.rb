@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all
+    @products = Product.paginate(page: params[:page], per_page: 10)
   end
 
   def show
@@ -21,7 +21,7 @@ class ProductsController < ApplicationController
   # end
   def search
     @search = params[:search]
-    @products = Product.where("title LIKE '%#{params[:search]}%' OR body LIKE '%#{params[:search]}%'" )
+    @products = Product.paginate(page: params[:page], per_page: 10).where("title LIKE '%#{params[:search]}%' OR body LIKE '%#{params[:search]}%'" )
   end
 
   private

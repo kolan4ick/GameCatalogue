@@ -5,4 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+30.times do
+  product = Product.create!(
+    title: Faker::Game.title,
+    body: Faker::Movie.quote,
+    genre: Faker::Game.genre,
+    developer: Faker::Name.name,
+    age_limit: Faker::Number.within(range: 1..21)
+  )
+  begin
+    file = URI.parse('https://picsum.photos/300').open
+    product.image.attach(io: file, filename: product.title.to_s)
+  rescue OpenURI::HTTPError => e
+    pp e
+  end
+end
