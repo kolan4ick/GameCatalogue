@@ -1,6 +1,6 @@
 <h1>Searching Results of "<%= @search %>"</h1>
 <h5>Count of results - <%= @products.count %></h5>
-<div class="row">  
+<div class="row">
   <%= render @products %>
 </div>
 <%= will_paginate @products %>
