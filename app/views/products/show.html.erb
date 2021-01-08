@@ -1,12 +1,28 @@
 <div class="row">
   <h3>
-      <b>Title: </b><%=@product.title%>
-    </h3>
-    <div style='font-size: 30px'>
-      <%= image_tag @product.photo, width:300, height:300%>
-      <br><b>Discription: </b><%= @product.body %>
-      <br><b>Genre: </b><%= @product.genre %>
-      <br><b>Developer: </b><%= @product.developer %>
-      <br><b>Minimum age: </b><%= @product.age_limit %>
-    </div>
+    <b>Title:
+    </b><%=@product.title%>
+  </h3>
+  <div style='font-size: 30px'>
+    <%= image_tag @product.photo, width:300, height:300%>
+    <br>
+    <b>Description:
+    </b><%= @product.body %>
+    <br>
+    <b>Genre:
+    </b><%= @product.genre %>
+    <br>
+    <b>Developer:
+    </b><%= @product.developer %>
+    <br>
+    <b>Minimum age:
+    </b><%= @product.age_limit %>
+    <br>
+    <b>Categories:
+    </b>
+    <% @product.categories.each do |category| %>
+      <%= link_to category.name, category_path(category)%>
+      <%= @product.categories.size > 1 && category != @product.categories.last ? ',' : ''%>
+    <% end %>
+  </div>
 </div>

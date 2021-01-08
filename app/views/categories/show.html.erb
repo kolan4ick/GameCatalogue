@@ -1,0 +1,6 @@
+<h1>Products with category
+  <%= @category.name %></h1>
+<div class="row">
+  <%=render @products %>
+</div>
+<%= will_paginate @products %>

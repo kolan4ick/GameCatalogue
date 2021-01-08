@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root to: 'pages#index'
   resources :products, only: %i[index show]
-  get :search, to:"products#search"
+  get :search, to: 'products#search'
+  resources :categories
 end

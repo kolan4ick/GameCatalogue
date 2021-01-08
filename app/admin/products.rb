@@ -4,10 +4,11 @@ ActiveAdmin.register Product do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :title, :body, :genre, :image, :developer, :age_limit
+  permit_params :title, :body, :genre, :image, :developer, :category_names, :age_limit, :categories
   form do |f|
     f.inputs do
       f.input :title
+      f.input :category_names
       f.input :body, as: :text
       f.input :image, as: :file
       f.input :genre
@@ -19,6 +20,7 @@ ActiveAdmin.register Product do
   show do |_product|
     attributes_table do
       row :title
+      row :categories
       row :body
       row :genre
       row :developer

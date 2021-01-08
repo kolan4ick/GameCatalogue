@@ -1,10 +1,15 @@
 <div class="col-6">
-      <%= link_to product_path(product) do %>
-      <h2>
-      <b>
-        <%= product.title %>
-      </b>
-    </h2>
-      <%= image_tag product.photo, width:300, height:300 %>
-      <% end %>
+  <%= link_to product_path(product) do %>
+  <h2>
+    <b>
+      <%= product.title %>
+    </b>
+  </h2>
+  <%= image_tag product.photo, width:300, height:300 %>
+<% end %>
+<div class="">
+  <% product.categories.each do |category| %>
+    <%= link_to category.name, category_path(category),class: "badge bg-secondary"%>
+  <% end %>
+</div>
 </div>
