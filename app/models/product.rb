@@ -1,8 +1,4 @@
 class Product < ApplicationRecord
-  include Filterable
-  scope :filter_by_status, ->(status) { where status: status }
-  scope :filter_by_location, ->(location_id) { where location_id: location_id }
-  scope :filter_by_starts_with, ->(name) { where('name like ?', "#{name}%") }
   has_one_attached :image
 
   has_many :category_products

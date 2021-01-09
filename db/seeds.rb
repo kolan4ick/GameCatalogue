@@ -21,7 +21,8 @@ products = []
     categories: Category.find([3]),
     genre: Faker::Game.genre,
     developer: Faker::Name.name,
-    age_limit: Faker::Number.within(range: 1..21),
+    # age_limit: Faker::Number.within(range: 1..21),
+    age_limit: 6,
     set_image: 'https://picsum.photos/300'
   }
 end

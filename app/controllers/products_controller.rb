@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.paginate(page: params[:page], per_page: 10)
+    @products = Product.paginate(page: params[:page], per_page: 10).with_attached_image.includes(:categories)
   end
 
   def show
@@ -21,10 +21,11 @@ class ProductsController < ApplicationController
   # end
   def search
     @search = params[:search]
-    @products = Product.paginate(page: params[:page],
-                                 per_page: 10).where("title LIKE '%#{params[:search]}%' OR body LIKE '%#{params[:search]}%'")
+    @filter = params[:filter]
+    @products = @filter == '' ? Product.all : Product.where("age_limit <= ?", @filter.to_i)
+    @products = @products.where("title LIKE '%#{params[:search]}%' OR body LIKE '%#{params[:search]}%'").paginate(page: params[:page], per_page: 10).with_attached_image.includes(:categories)
   end
-  
+
   private
 
   def product
