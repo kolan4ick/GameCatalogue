@@ -6,9 +6,8 @@ gem 'activeadmin' #admin
 gem 'activestorage' #for storaging information
 gem 'devise' #for adding users and admins
 gem 'simple_form' #for easy form
-gem 'will_paginate', '~> 3.3.0' #paginating
-gem 'bootstrap'
 gem 'faker'
+gem 'jquery-turbolinks'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.0'
 # Use sqlite3 as the database for Active Record
@@ -17,7 +16,8 @@ gem 'sqlite3', '~> 1.4'
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
-gem 'will_paginate-bootstrap'
+gem 'jquery-rails'
+gem 'will_paginate'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
