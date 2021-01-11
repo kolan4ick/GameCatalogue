@@ -13,4 +13,6 @@ Turbolinks.start()
 ActiveStorage.start()
 
 import "bootstrap"
-import "../stylesheets/application" 
+import "../stylesheets/application"
+import $ from 'jquery';
+window.$ = $
