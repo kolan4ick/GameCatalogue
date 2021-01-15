@@ -1,6 +1,21 @@
-<h1>Searching Results of "<%= @search %>" and "<%= @filter %>"</h1>
-<h5>Count of results - <%= @products.count %></h5>
+<h1>
+  <% if @search != '' %>
+    <%= t('search.title') %>
+    <%= @search %>
+  <% else %>
+    <%= t('search.title')%>
+  <% end %>
+  <% if @filter != '' %>
+    <%= t('search.age') if @filter != ''%>
+    <%= @filter if @filter!=''%></h1>
+<% else %>
+  <%if @search == ''%>
+    <%= t('search.all_res') %>
+  <% end %>
+<% end %>
+<h5><%= t('search.count')%>
+  <%= @products.count %></h5>
 <div class="row">
   <%= render @products %>
 </div>
-<%= will_paginate @products %>
+<%= will_paginate @products, :previous_label => t('views.pagination.prev'), :next_label => t('views.pagination.next') %>

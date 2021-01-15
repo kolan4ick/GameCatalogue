@@ -1,0 +1,34 @@
+uk:
+  main:
+    title: 'Головна сторінка'
+  navbar:
+    title:
+      main: "Каталог ком'ютерних ігор"
+      products: "Всі ігри"
+      categories: "Категорії"
+    search:
+      placeholder: "Пошук"
+    filter:
+      select_filter: "Виберіть віковий фільтр"
+  categories:
+    title: "Перелік категорій"
+    products_with: "Продукти з категорією"
+  views:
+    pagination:
+      next: "Наступна"
+      prev: "Попередня"
+  product:
+    index:
+      all_products: "Всі наші ігри"
+    show:
+      title: "Назва:"
+      body: "Опис:"
+      genre: "Жанр:"
+      developer: "Розробник:"
+      age_limit: "Вікове обмеження:"
+      categories: "Категорії:"
+  search:
+    title: "Результати пошуку за"
+    age: "віком менше"
+    count: "Кількість результатів - "
+    all_res: "Всі результати"

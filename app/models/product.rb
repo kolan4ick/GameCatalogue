@@ -3,7 +3,7 @@ class Product < ApplicationRecord
 
   has_many :category_products
   has_many :categories, through: :category_products
-
+  # has_rich_text :body
   def category_names
     categories.collect do |category|
       category.name

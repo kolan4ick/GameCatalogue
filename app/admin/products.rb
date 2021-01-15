@@ -21,7 +21,9 @@ ActiveAdmin.register Product do
     attributes_table do
       row :title
       row :categories
-      row :body
+      row :body do
+        _product.body.to_s
+      end
       row :genre
       row :developer
       row :age_limit

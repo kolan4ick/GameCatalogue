@@ -2,21 +2,26 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
-gem 'activeadmin' #admin
-gem 'activestorage' #for storaging information
-gem 'devise' #for adding users and admins
-gem 'simple_form' #for easy form
+gem 'activeadmin' # admin
+gem 'activestorage' # for storaging information
+gem 'devise' # for adding users and admins
 gem 'faker'
 gem 'jquery-turbolinks'
+gem 'simple_form' # for easy form
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.0'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
-# Use Puma as the app server
+# gem 'sqlite3', '~> 1.4'
+# # Use Puma as the app server
+gem 'pg'
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '>= 6'
+gem 'actiontext'
+gem 'activeadmin-trix', '~> 0.0.1'
+gem 'http_accept_language'
+gem 'image_processing', '~> 1.2'
 gem 'jquery-rails'
+gem 'sass-rails', '>= 6'
 gem 'will_paginate'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
