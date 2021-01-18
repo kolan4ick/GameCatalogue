@@ -32,3 +32,6 @@ en:
     age: "age less"
     count: "Count of results - "
     all_res: "All results"
+  time:
+    formats:
+      long: "%Y-%m-%d %H:%M:%S"

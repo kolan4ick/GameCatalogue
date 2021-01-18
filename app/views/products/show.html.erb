@@ -27,4 +27,9 @@
       <%= @product.categories.size > 1 && category != @product.categories.last ? ',' : ''%>
     <% end %>
   </div>
+  <div class="call_me">
+  <p class="p-2 text-dark">
+    <%=render "call_mes/form"%>
+  </p>
+</div>
 </div>

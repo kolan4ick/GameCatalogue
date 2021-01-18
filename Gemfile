@@ -15,6 +15,7 @@ gem 'rails', '~> 6.1.0'
 # # Use Puma as the app server
 gem 'pg'
 gem 'puma', '~> 5.0'
+gem 'roo', '~> 2.8.0'
 # Use SCSS for stylesheets
 gem 'actiontext'
 gem 'activeadmin-trix', '~> 0.0.1'

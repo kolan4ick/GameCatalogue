@@ -1,9 +1,18 @@
 ActiveAdmin.register Product do
-  # See permitted parameters documentation:
-  # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  # Uncomment all parameters which should be permitted for assignment
-  #
+  action_item :import, except: :import do
+   link_to t('import'), admin_products_import_path
+ end
+
+ controller do
+    def import; end
+
+    def import_file
+      Product.import(params[:file])
+      redirect_to admin_products_path
+    end
+  end
+
+
   permit_params :title, :body, :genre, :image, :developer, :category_names, :age_limit, :categories
   form do |f|
     f.inputs do
