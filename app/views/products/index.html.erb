@@ -2,6 +2,6 @@
   <b><%= t('product.index.all_products') %></b>
 </h1>
 <div class="row">
-  <%= render @products%>
+  <%=render ProductComponent.with_collection(@products)%>
 </div>
 <%= will_paginate @products, :previous_label => t('views.pagination.prev'), :next_label => t('views.pagination.next') %>

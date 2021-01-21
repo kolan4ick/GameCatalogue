@@ -23,7 +23,9 @@ gem 'http_accept_language'
 gem 'image_processing', '~> 1.2'
 gem 'jquery-rails'
 gem 'sass-rails', '>= 6'
+ gem "telegram-bot-ruby"
 gem 'will_paginate'
+gem 'view_component', require: 'view_component/engine'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

@@ -16,6 +16,6 @@
 <h5><%= t('search.count')%>
   <%= @products.count %></h5>
 <div class="row">
-  <%= render @products %>
+  <%=render ProductComponent.with_collection(@products)%>
 </div>
 <%= will_paginate @products, :previous_label => t('views.pagination.prev'), :next_label => t('views.pagination.next') %>
